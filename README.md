@@ -1,25 +1,55 @@
 # 🕹️ SyntPanel
 
-**SyntPanel** é um painel de gerenciamento de servidores Minecraft feito em **Python** com **Flask** e **Socket.IO**, perfeito para rodar em ambientes leves como **Termux com proot-distro Ubuntu**.  
-Ele permite upload de arquivos `.jar`, execução do servidor com visualização do terminal, aceite do EULA, e organização dos servidores em pastas.
+**SyntPanel** é um painel de gerenciamento de servidores de jogos (com foco em Minecraft) desenvolvido com **Python**, **Flask** e **Socket.IO**.
 
-## ✨ Recursos
-- Upload de arquivos `.jar`
-- Aceite automático do EULA
-- Terminal ao vivo com log do servidor
-- Organização por pasta
-- Interface leve e funcional
+Com ele, é possível enviar arquivos `.jar`, iniciar servidores com visualização do terminal em tempo real, aceitar automaticamente o EULA e organizar os servidores em pastas individuais.
 
-## 🚀 Instalação
-```bash
-apt update && apt install unzip git python3-venv -y
-git clone https://github.com/TheCoderZeus/SyntPanel
-cd SyntPanel
-python3 -m venv venv
-source venv/bin/activate
-pip install flask flask-socketio eventlet
-python app.py
+---
+
+## ✨ Funcionalidades
+
+- 📂 Upload de arquivos `.jar`
+- 📄 Aceite automático do `eula.txt`
+- 💬 Terminal ao vivo com logs do servidor
+- 🗂️ Organização de arquivos por servidor
+- 🖥️ Execução direta de servidores Minecraft
+- 🔧 Interface web simples, direta e funcional
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+SyntPanel/
+├── app.py                  # Servidor Flask principal
+├── templates/
+│   └── index.html          # Interface HTML com terminal embutido
+├── servers/                # Diretório onde os servidores são armazenados
+└── README.md
 ```
 
-## 🌐 Acesso
-Abra `http://localhost:5000` no navegador ou use o IP do seu celular para acessar de outro dispositivo.
+---
+
+## 🚀 Instalação
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/TheCoderZeus/SyntPanel
+   cd SyntPanel
+   ```
+
+2. Crie um ambiente virtual:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. Instale as dependências:
+   ```bash
+   pip install flask flask-socketio eventlet
+   ```
+
+4. Inicie o painel:
+   ```bash
+   python app.py
+   ```
