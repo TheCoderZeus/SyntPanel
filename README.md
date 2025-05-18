@@ -21,6 +21,7 @@ Com ele, é possível enviar arquivos `.jar`, iniciar servidores com visualizaç
 
 ```
 SyntPanel/
+├── src/
 ├── app.py                  # Servidor Flask principal
 ├── templates/
 │   └── index.html          # Interface HTML com terminal embutido
@@ -35,7 +36,7 @@ SyntPanel/
 1. Clone o repositório:
    ```bash
    git clone https://github.com/TheCoderZeus/SyntPanel
-   cd SyntPanel
+   cd SyntPanel && cd src
    ```
 
 2. Crie um ambiente virtual:
