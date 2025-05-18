@@ -22,11 +22,13 @@ Com ele, é possível enviar arquivos `.jar`, iniciar servidores com visualizaç
 ```
 SyntPanel/
 ├── src/
-├── app.py                  # Servidor Flask principal
+│ └── routes/
+│ ├── file_routes.py # Rotas relacionadas ao gerenciamento de arquivos
+│ └── server_routes.py # Rotas responsáveis por iniciar e gerenciar servidores
+├── app.py # Servidor Flask principal
 ├── templates/
-│   └── index.html          # Interface HTML com terminal embutido
-├── servers/                # Diretório onde os servidores são armazenados
-└── README.md
+│ └── index.html # Interface HTML com terminal embutido
+├── servers/ # Diretório onde os servidores são armazenados
 ```
 
 ---
