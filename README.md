@@ -1,29 +1,25 @@
-# SyntPanel - Panel for Minecraft Servers
+# 🕹️ SyntPanel
 
-O SyntPanel nasceu com intuito de rodar servidores atraves de uma VPS o intuito era pra ser usado para uso proprio, mas distribui para uso comercial para todos que quiser contribuir e utilizar o painel ou modificar já que contem poucas coisas.
+**SyntPanel** é um painel de gerenciamento de servidores Minecraft feito em **Python** com **Flask** e **Socket.IO**, perfeito para rodar em ambientes leves como **Termux com proot-distro Ubuntu**.  
+Ele permite upload de arquivos `.jar`, execução do servidor com visualização do terminal, aceite do EULA, e organização dos servidores em pastas.
 
-# Como instalar?
+## ✨ Recursos
+- Upload de arquivos `.jar`
+- Aceite automático do EULA
+- Terminal ao vivo com log do servidor
+- Organização por pasta
+- Interface leve e funcional
 
-```apt update && apt install python3-pip unzip default-jdk -y```
-```pip3 install flask flask-socketio eventlet```
-
-```unzip syntpanel.zip``` melhor pelo filezilla recomendo.
-```cd gamepanel```
-
+## 🚀 Instalação
+```bash
+apt update && apt install unzip git python3-venv -y
+git clone https://github.com/TheCoderZeus/SyntPanel
+cd SyntPanel
+python3 -m venv venv
+source venv/bin/activate
+pip install flask flask-socketio eventlet
+python app.py
 ```
-apt install wget
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
-unzip ngrok-stable-linux-arm.zip
-./ngrok http 5000
-````
 
-# O que o painel já faz:
-📁 Upload de arquivos .jar ou .zip para servers/
-
-▶️ Inicia servidor (usa: java -Xmx1024M -jar nome.jar nogui)
-
-🛑 Para o servidor com segurança
-
-💬 Terminal em tempo real via web
-
-🖥 Interface web simples
+## 🌐 Acesso
+Abra `http://localhost:5000` no navegador ou use o IP do seu celular para acessar de outro dispositivo.
