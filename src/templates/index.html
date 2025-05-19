@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyntPanel - Control Panel</title>
+    <title>Painel de Controle do Servidor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.36.1/min/vs/editor/editor.main.css" rel="stylesheet">
@@ -268,6 +268,46 @@
         let createServerModal;
         let fileUploadModal;
         let serverSelectModal;
+        let editor = null;
+        let currentFile = null;
+        let currentPath = '';
+
+        async function saveFile() {
+            if (!currentFile || !editor) {
+                console.error('Nenhum arquivo aberto para salvar');
+                return;
+            }
+            
+            try {
+                const content = editor.getValue();
+                const response = await fetch(`/file/${currentFile}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ content })
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok && result.success) {
+                    alert('Arquivo salvo com sucesso!');
+                    await loadFiles(currentPath); // Atualiza a lista de arquivos
+                } else {
+                    throw new Error(result.error || 'Erro ao salvar arquivo');
+                }
+            } catch (error) {
+                console.error('Erro ao salvar:', error);
+                alert(`Erro ao salvar arquivo: ${error.message}`);
+            }
+        }
+
+        function closeEditor() {
+            currentFile = null;
+            document.getElementById('editor-container').style.display = 'none';
+            document.getElementById('file-list').style.display = 'block';
+            loadFiles(currentPath); // Recarrega a lista de arquivos ao fechar
+        }
         
         document.addEventListener('DOMContentLoaded', function() {
             createServerModal = new bootstrap.Modal(document.getElementById('createServerModal'));
@@ -280,9 +320,7 @@
             const createServerForm = document.getElementById('createServerForm');
             const fileUploadForm = document.getElementById('fileUploadForm');
             const consoleInput = document.getElementById('console-input');
-            let currentPath = '';
-            let editor = null;
-            let currentFile = null;
+
             require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.36.1/min/vs' }});
             require(['vs/editor/editor.main'], function() {
                 editor = monaco.editor.create(document.getElementById('monaco-editor'), {
@@ -501,43 +539,6 @@
                 }
             }
 
-            async function saveFile() {
-                if (!currentFile || !editor) {
-                    console.error('Nenhum arquivo aberto para salvar');
-                    return;
-                }
-                
-                try {
-                    const content = editor.getValue();
-                    const response = await fetch(`/file/${currentFile}`, {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({ content })
-                    });
-                    
-                    const result = await response.json();
-                    
-                    if (response.ok && result.success) {
-                        alert('Arquivo salvo com sucesso!');
-                        await loadFiles(currentPath); // Atualiza a lista de arquivos
-                    } else {
-                        throw new Error(result.error || 'Erro ao salvar arquivo');
-                    }
-                } catch (error) {
-                    console.error('Erro ao salvar:', error);
-                    alert(`Erro ao salvar arquivo: ${error.message}`);
-                }
-            }
-
-            function closeEditor() {
-                currentFile = null;
-                document.getElementById('editor-container').style.display = 'none';
-                document.getElementById('file-list').style.display = 'block';
-                loadFiles(currentPath); // Recarrega a lista de arquivos ao fechar
-            }
-
             function downloadFile(path) {
                 console.log('Iniciando download:', path);
                 window.location.href = `/download/${path}`;
@@ -645,6 +646,9 @@
             window.handleFileClick = handleFileClick;
             window.loadFiles = loadFiles;
             window.downloadFile = downloadFile;
+            window.saveFile = saveFile;
+            window.closeEditor = closeEditor;
+            window.openFileInEditor = openFileInEditor;
 
             async function deleteItem(path, type) {
                 const itemType = type === 'directory' ? 'pasta/servidor' : 'arquivo';
