@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Controle do Servidor</title>
+    <title>SyntPanel - Control Panel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.36.1/min/vs/editor/editor.main.css" rel="stylesheet">
@@ -502,7 +502,10 @@
             }
 
             async function saveFile() {
-                if (!currentFile || !editor) return;
+                if (!currentFile || !editor) {
+                    console.error('Nenhum arquivo aberto para salvar');
+                    return;
+                }
                 
                 try {
                     const content = editor.getValue();
@@ -514,21 +517,25 @@
                         body: JSON.stringify({ content })
                     });
                     
-                    if (response.ok) {
+                    const result = await response.json();
+                    
+                    if (response.ok && result.success) {
                         alert('Arquivo salvo com sucesso!');
+                        await loadFiles(currentPath); // Atualiza a lista de arquivos
                     } else {
-                        throw new Error('Erro ao salvar arquivo');
+                        throw new Error(result.error || 'Erro ao salvar arquivo');
                     }
                 } catch (error) {
                     console.error('Erro ao salvar:', error);
-                    alert('Erro ao salvar arquivo');
+                    alert(`Erro ao salvar arquivo: ${error.message}`);
                 }
             }
 
             function closeEditor() {
                 currentFile = null;
                 document.getElementById('editor-container').style.display = 'none';
-                fileList.style.display = 'block';
+                document.getElementById('file-list').style.display = 'block';
+                loadFiles(currentPath); // Recarrega a lista de arquivos ao fechar
             }
 
             function downloadFile(path) {
