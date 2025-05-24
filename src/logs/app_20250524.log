@@ -1,0 +1,155 @@
+2025-05-24 04:32:00 INFO Scheduler started
+2025-05-24 04:32:00 INFO Scheduler has been shut down
+2025-05-24 04:32:16 INFO Scheduler started
+2025-05-24 04:32:16 INFO Scheduler has been shut down
+2025-05-24 04:32:31 INFO Scheduler started
+2025-05-24 04:32:31 INFO Scheduler has been shut down
+2025-05-24 04:33:34 INFO Scheduler started
+2025-05-24 04:33:34 INFO Scheduler has been shut down
+2025-05-24 04:34:01 INFO Scheduler started
+2025-05-24 04:34:01 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+2025-05-24 04:34:01 INFO [33mPress CTRL+C to quit[0m
+2025-05-24 04:34:01 INFO  * Restarting with stat
+2025-05-24 04:34:03 INFO Scheduler started
+2025-05-24 04:34:03 WARNING  * Debugger is active!
+2025-05-24 04:34:03 INFO  * Debugger PIN: 115-137-904
+2025-05-24 04:34:03 INFO 127.0.0.1 - - [24/May/2025 04:34:03] "GET /socket.io/?EIO=4&transport=polling&t=PS1DfCG HTTP/1.1" 200 -
+2025-05-24 04:34:03 INFO 127.0.0.1 - - [24/May/2025 04:34:03] "POST /socket.io/?EIO=4&transport=polling&t=PS1DfMR&sid=jA1OEbms007AavMJAAAA HTTP/1.1" 200 -
+2025-05-24 04:34:03 INFO 127.0.0.1 - - [24/May/2025 04:34:03] "GET /socket.io/?EIO=4&transport=polling&t=PS1DfMT&sid=jA1OEbms007AavMJAAAA HTTP/1.1" 200 -
+2025-05-24 04:34:08 INFO 127.0.0.1 - - [24/May/2025 04:34:08] "GET /status HTTP/1.1" 200 -
+2025-05-24 04:34:11 INFO 127.0.0.1 - - [24/May/2025 04:34:11] "GET /socket.io/?EIO=4&transport=websocket&sid=jA1OEbms007AavMJAAAA HTTP/1.1" 200 -
+2025-05-24 04:34:11 INFO 127.0.0.1 - - [24/May/2025 04:34:11] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:34:12 INFO 127.0.0.1 - - [24/May/2025 04:34:12] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:34:15 INFO 127.0.0.1 - - [24/May/2025 04:34:15] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:34:59 INFO 127.0.0.1 - - [24/May/2025 04:34:59] "[32mGET /api/docs HTTP/1.1[0m" 308 -
+2025-05-24 04:34:59 INFO 127.0.0.1 - - [24/May/2025 04:34:59] "GET /api/docs/ HTTP/1.1" 200 -
+2025-05-24 04:34:59 INFO 127.0.0.1 - - [24/May/2025 04:34:59] "GET /api/docs/swagger-ui.css HTTP/1.1" 200 -
+2025-05-24 04:34:59 INFO 127.0.0.1 - - [24/May/2025 04:34:59] "GET /api/docs/index.css HTTP/1.1" 200 -
+2025-05-24 04:34:59 INFO 127.0.0.1 - - [24/May/2025 04:34:59] "GET /api/docs/swagger-ui-bundle.js HTTP/1.1" 200 -
+2025-05-24 04:34:59 INFO 127.0.0.1 - - [24/May/2025 04:34:59] "GET /api/docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2025-05-24 04:35:00 INFO 127.0.0.1 - - [24/May/2025 04:35:00] "GET /static/swagger.json HTTP/1.1" 200 -
+2025-05-24 04:35:00 INFO 127.0.0.1 - - [24/May/2025 04:35:00] "GET /api/docs/favicon-32x32.png HTTP/1.1" 200 -
+2025-05-24 04:35:28 INFO 127.0.0.1 - - [24/May/2025 04:35:28] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:36:39 INFO 127.0.0.1 - - [24/May/2025 04:36:39] "POST /login HTTP/1.1" 200 -
+2025-05-24 04:36:43 INFO 127.0.0.1 - - [24/May/2025 04:36:43] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:36:44 INFO 127.0.0.1 - - [24/May/2025 04:36:44] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:36:47 INFO 127.0.0.1 - - [24/May/2025 04:36:47] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:37:05 INFO 127.0.0.1 - - [24/May/2025 04:37:05] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:37:33 INFO 127.0.0.1 - - [24/May/2025 04:37:33] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:37:37 INFO 127.0.0.1 - - [24/May/2025 04:37:37] "POST /login HTTP/1.1" 200 -
+2025-05-24 04:37:54 INFO 127.0.0.1 - - [24/May/2025 04:37:54] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:38:19 INFO Acesso ao painel
+2025-05-24 04:38:19 INFO 127.0.0.1 - - [24/May/2025 04:38:19] "GET / HTTP/1.1" 200 -
+2025-05-24 04:38:22 INFO 127.0.0.1 - - [24/May/2025 04:38:22] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:38:23 INFO 127.0.0.1 - - [24/May/2025 04:38:23] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:38:23 INFO 127.0.0.1 - - [24/May/2025 04:38:23] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:38:24 INFO 127.0.0.1 - - [24/May/2025 04:38:24] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:38:24 INFO 127.0.0.1 - - [24/May/2025 04:38:24] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:38:25 INFO 127.0.0.1 - - [24/May/2025 04:38:25] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:38:25 INFO 127.0.0.1 - - [24/May/2025 04:38:25] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:38:25 INFO 127.0.0.1 - - [24/May/2025 04:38:25] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:38:25 INFO 127.0.0.1 - - [24/May/2025 04:38:25] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:38:25 INFO 127.0.0.1 - - [24/May/2025 04:38:25] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:38:26 INFO 127.0.0.1 - - [24/May/2025 04:38:26] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:38:26 INFO 127.0.0.1 - - [24/May/2025 04:38:26] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:38:45 INFO  * Detected change in 'C:\\Users\\mateus\\3D Objects\\SyntPanel-main\\src\\auth.py', reloading
+2025-05-24 04:38:45 INFO Scheduler has been shut down
+2025-05-24 04:38:45 INFO  * Restarting with stat
+2025-05-24 04:38:47 INFO Scheduler started
+2025-05-24 04:38:47 WARNING  * Debugger is active!
+2025-05-24 04:38:47 INFO  * Debugger PIN: 115-137-904
+2025-05-24 04:38:51 INFO Scheduler has been shut down
+2025-05-24 04:38:52 INFO Scheduler has been shut down
+2025-05-24 04:39:05 INFO Scheduler started
+2025-05-24 04:39:05 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+2025-05-24 04:39:05 INFO [33mPress CTRL+C to quit[0m
+2025-05-24 04:39:05 INFO  * Restarting with stat
+2025-05-24 04:39:07 INFO Scheduler started
+2025-05-24 04:39:07 WARNING  * Debugger is active!
+2025-05-24 04:39:07 INFO  * Debugger PIN: 115-137-904
+2025-05-24 04:39:07 INFO 127.0.0.1 - - [24/May/2025 04:39:07] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:39:10 INFO 127.0.0.1 - - [24/May/2025 04:39:10] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-24 04:39:15 INFO 127.0.0.1 - - [24/May/2025 04:39:15] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:39:15 INFO 127.0.0.1 - - [24/May/2025 04:39:15] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-24 04:39:17 INFO 127.0.0.1 - - [24/May/2025 04:39:17] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:39:44 INFO 127.0.0.1 - - [24/May/2025 04:39:44] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:39:59 INFO 127.0.0.1 - - [24/May/2025 04:39:59] "GET /api/docs/ HTTP/1.1" 200 -
+2025-05-24 04:39:59 INFO 127.0.0.1 - - [24/May/2025 04:39:59] "[36mGET /api/docs/index.css HTTP/1.1[0m" 304 -
+2025-05-24 04:39:59 INFO 127.0.0.1 - - [24/May/2025 04:39:59] "[36mGET /api/docs/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-05-24 04:39:59 INFO 127.0.0.1 - - [24/May/2025 04:39:59] "[36mGET /api/docs/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-05-24 04:39:59 INFO 127.0.0.1 - - [24/May/2025 04:39:59] "[36mGET /api/docs/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-05-24 04:39:59 INFO 127.0.0.1 - - [24/May/2025 04:39:59] "[36mGET /static/swagger.json HTTP/1.1[0m" 304 -
+2025-05-24 04:40:19 INFO 127.0.0.1 - - [24/May/2025 04:40:19] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:40:21 INFO 127.0.0.1 - - [24/May/2025 04:40:21] "GET /api/docs/ HTTP/1.1" 200 -
+2025-05-24 04:40:21 INFO 127.0.0.1 - - [24/May/2025 04:40:21] "[36mGET /api/docs/index.css HTTP/1.1[0m" 304 -
+2025-05-24 04:40:21 INFO 127.0.0.1 - - [24/May/2025 04:40:21] "[36mGET /api/docs/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-05-24 04:40:21 INFO 127.0.0.1 - - [24/May/2025 04:40:21] "[36mGET /api/docs/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-05-24 04:40:21 INFO 127.0.0.1 - - [24/May/2025 04:40:21] "[36mGET /api/docs/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-05-24 04:40:21 INFO 127.0.0.1 - - [24/May/2025 04:40:21] "[36mGET /static/swagger.json HTTP/1.1[0m" 304 -
+2025-05-24 04:40:21 INFO 127.0.0.1 - - [24/May/2025 04:40:21] "[36mGET /api/docs/favicon-32x32.png HTTP/1.1[0m" 304 -
+2025-05-24 04:40:26 INFO 127.0.0.1 - - [24/May/2025 04:40:26] "[31m[1mGET /me HTTP/1.1[0m" 401 -
+2025-05-24 04:40:55 INFO 127.0.0.1 - - [24/May/2025 04:40:55] "POST /login HTTP/1.1" 200 -
+2025-05-24 04:40:58 INFO 127.0.0.1 - - [24/May/2025 04:40:58] "POST /login HTTP/1.1" 200 -
+2025-05-24 04:41:03 INFO 127.0.0.1 - - [24/May/2025 04:41:03] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:41:17 INFO 127.0.0.1 - - [24/May/2025 04:41:17] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:41:18 INFO 127.0.0.1 - - [24/May/2025 04:41:18] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:41:19 INFO 127.0.0.1 - - [24/May/2025 04:41:19] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:41:19 INFO 127.0.0.1 - - [24/May/2025 04:41:19] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:41:19 INFO 127.0.0.1 - - [24/May/2025 04:41:19] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:41:20 INFO 127.0.0.1 - - [24/May/2025 04:41:20] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:41:20 INFO 127.0.0.1 - - [24/May/2025 04:41:20] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:41:20 INFO 127.0.0.1 - - [24/May/2025 04:41:20] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:41:20 INFO 127.0.0.1 - - [24/May/2025 04:41:20] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:41:20 INFO 127.0.0.1 - - [24/May/2025 04:41:20] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:41:37 INFO 127.0.0.1 - - [24/May/2025 04:41:37] "POST /login HTTP/1.1" 200 -
+2025-05-24 04:41:42 INFO Scheduler has been shut down
+2025-05-24 04:41:42 INFO Scheduler has been shut down
+2025-05-24 04:41:46 INFO Scheduler started
+2025-05-24 04:41:46 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+2025-05-24 04:41:46 INFO [33mPress CTRL+C to quit[0m
+2025-05-24 04:41:46 INFO  * Restarting with stat
+2025-05-24 04:41:47 INFO Scheduler started
+2025-05-24 04:41:47 WARNING  * Debugger is active!
+2025-05-24 04:41:48 INFO  * Debugger PIN: 115-137-904
+2025-05-24 04:41:48 INFO 127.0.0.1 - - [24/May/2025 04:41:48] "GET /api/docs/ HTTP/1.1" 200 -
+2025-05-24 04:41:48 INFO 127.0.0.1 - - [24/May/2025 04:41:48] "[36mGET /api/docs/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-05-24 04:41:48 INFO 127.0.0.1 - - [24/May/2025 04:41:48] "[36mGET /api/docs/index.css HTTP/1.1[0m" 304 -
+2025-05-24 04:41:48 INFO 127.0.0.1 - - [24/May/2025 04:41:48] "[36mGET /api/docs/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-05-24 04:41:48 INFO 127.0.0.1 - - [24/May/2025 04:41:48] "[36mGET /api/docs/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-05-24 04:41:48 INFO 127.0.0.1 - - [24/May/2025 04:41:48] "[36mGET /static/swagger.json HTTP/1.1[0m" 304 -
+2025-05-24 04:41:48 INFO 127.0.0.1 - - [24/May/2025 04:41:48] "[36mGET /api/docs/favicon-32x32.png HTTP/1.1[0m" 304 -
+2025-05-24 04:41:55 INFO 127.0.0.1 - - [24/May/2025 04:41:55] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:41:55 INFO 127.0.0.1 - - [24/May/2025 04:41:55] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:41:56 INFO 127.0.0.1 - - [24/May/2025 04:41:56] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:41:56 INFO 127.0.0.1 - - [24/May/2025 04:41:56] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:42:13 INFO 127.0.0.1 - - [24/May/2025 04:42:13] "[31m[1mGET /me HTTP/1.1[0m" 401 -
+2025-05-24 04:42:19 INFO 127.0.0.1 - - [24/May/2025 04:42:19] "[31m[1mGET /me HTTP/1.1[0m" 401 -
+2025-05-24 04:42:33 INFO 127.0.0.1 - - [24/May/2025 04:42:33] "GET /api/docs/ HTTP/1.1" 200 -
+2025-05-24 04:42:33 INFO 127.0.0.1 - - [24/May/2025 04:42:33] "[36mGET /api/docs/index.css HTTP/1.1[0m" 304 -
+2025-05-24 04:42:33 INFO 127.0.0.1 - - [24/May/2025 04:42:33] "[36mGET /api/docs/swagger-ui.css HTTP/1.1[0m" 304 -
+2025-05-24 04:42:33 INFO 127.0.0.1 - - [24/May/2025 04:42:33] "[36mGET /api/docs/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2025-05-24 04:42:33 INFO 127.0.0.1 - - [24/May/2025 04:42:33] "[36mGET /api/docs/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2025-05-24 04:42:34 INFO 127.0.0.1 - - [24/May/2025 04:42:34] "[36mGET /static/swagger.json HTTP/1.1[0m" 304 -
+2025-05-24 04:42:54 INFO 127.0.0.1 - - [24/May/2025 04:42:54] "POST /login HTTP/1.1" 200 -
+2025-05-24 04:43:03 INFO 127.0.0.1 - - [24/May/2025 04:43:03] "[31m[1mGET /me HTTP/1.1[0m" 401 -
+2025-05-24 04:43:03 INFO 127.0.0.1 - - [24/May/2025 04:43:03] "[31m[1mGET /me HTTP/1.1[0m" 401 -
+2025-05-24 04:43:04 INFO 127.0.0.1 - - [24/May/2025 04:43:04] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:43:05 INFO 127.0.0.1 - - [24/May/2025 04:43:05] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:43:06 INFO 127.0.0.1 - - [24/May/2025 04:43:06] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:43:07 INFO 127.0.0.1 - - [24/May/2025 04:43:07] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:43:08 INFO 127.0.0.1 - - [24/May/2025 04:43:08] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:43:28 INFO 127.0.0.1 - - [24/May/2025 04:43:28] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-05-24 04:43:30 INFO 127.0.0.1 - - [24/May/2025 04:43:30] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:43:31 INFO 127.0.0.1 - - [24/May/2025 04:43:31] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:43:31 INFO 127.0.0.1 - - [24/May/2025 04:43:31] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-05-24 04:43:55 INFO Scheduler has been shut down
+2025-05-24 04:43:55 INFO Scheduler has been shut down

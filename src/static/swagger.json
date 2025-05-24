@@ -1,0 +1,50 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "SyntPanel API",
+    "description": "Documentação automática da API do painel de servidores.",
+    "version": "1.0.0"
+  },
+  "basePath": "/",
+  "schemes": ["http"],
+  "paths": {
+    "/login": {
+      "post": {
+        "summary": "Autenticação de usuário",
+        "parameters": [{
+          "in": "body",
+          "name": "body",
+          "required": true,
+          "schema": {
+            "type": "object",
+            "properties": {
+              "username": {"type": "string"},
+              "password": {"type": "string"}
+            }
+          }
+        }],
+        "responses": {
+          "200": {"description": "Token JWT de autenticação"},
+          "401": {"description": "Credenciais inválidas"}
+        }
+      }
+    },
+    "/me": {
+      "get": {
+        "summary": "Retorna dados do usuário autenticado",
+        "security": [{"Bearer": []}],
+        "responses": {
+          "200": {"description": "Dados do usuário"},
+          "401": {"description": "Token inválido ou ausente"}
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  }
+}
