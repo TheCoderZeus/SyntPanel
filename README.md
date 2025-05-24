@@ -96,7 +96,7 @@ Pull requests são bem-vindos! Se quiser sugerir novos temas, recursos ou melhor
 ---
 
 ## 📸 Screenshots
-> Adicione aqui prints do painel para mostrar o novo visual!
+> ![Capturar](https://github.com/user-attachments/assets/59068c38-8018-408c-9b15-148524f0bfcc)
 
 ---
 
