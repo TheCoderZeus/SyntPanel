@@ -96,7 +96,6 @@ Pull requests são bem-vindos! Se quiser sugerir novos temas, recursos ou melhor
 ---
 
 ## 📸 Screenshots
-> ![Capturar](https://github.com/user-attachments/assets/59068c38-8018-408c-9b15-148524f0bfcc)
 https://github.com/user-attachments/assets/597fb382-ed23-45d2-bcd1-232e17e969c0
 
 
